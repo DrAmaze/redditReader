@@ -28,4 +28,5 @@ comments.on('comment', (comment) => {
     if (comment.body === ':(') {
       comment.reply(':)');
     }
+    console.log(comment.body);
 });
