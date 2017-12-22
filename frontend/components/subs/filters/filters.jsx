@@ -1,7 +1,4 @@
 import React from 'react';
-require('../../_css/filters');
-require('../../_css/shared/three_d');
-require('../../_css/shared/hr');
 
 const FILTERS = ["HOT", "NEW", "RISING"];
 

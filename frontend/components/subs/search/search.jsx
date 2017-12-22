@@ -1,8 +1,5 @@
 import React from 'react';
 import { bindAll } from 'lodash';
-require('../../_css/sub_search');
-require('../../_css/shared/three_d');
-require('../../_css/shared/exit');
 
 class SubSearch extends React.Component {
   constructor(props){

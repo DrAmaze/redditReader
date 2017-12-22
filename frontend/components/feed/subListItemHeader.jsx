@@ -1,6 +1,5 @@
 import React from 'react';
 import SubListItem from './subListItem';
-require('../_css/shared/three_d');
 
 
 const Header = ({ listing }) => {

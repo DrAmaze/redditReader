@@ -5,14 +5,14 @@ export const REQUEST_MORE_LISTINGS = "REQUEST_MORE_LISTINGS";
 export const LOADING = "LOADING";
 
 // Synchronous actions
-export const receiveListings = data => ({
+export const receiveListings = payload => ({
   type: RECEIVE_LISTINGS,
-  data
+  payload
 });
 
-export const receiveAdditionalListings = data => ({
+export const receiveAdditionalListings = payload => ({
   type: RECEIVE_ADDITIONAL_LISTINGS,
-  data
+  payload
 });
 
 export const requestMoreListings = () => ({

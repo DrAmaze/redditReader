@@ -1,8 +1,4 @@
 import React from 'react';
-require('../../_css/sub_list');
-require('../../_css/shared/three_d');
-require('../../_css/shared/exit');
-require('../../_css/shared/hr');
 
 export default ({ subList, toggleSub, deleteSub }) => {
 

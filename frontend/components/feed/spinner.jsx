@@ -1,5 +1,4 @@
 import React from 'react';
-require('../_css/spinner');
 
 export default () => {
 

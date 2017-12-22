@@ -5,14 +5,13 @@ import store from '../store.js';
 import { initialize } from '../actions/feedActions';
 
 // Components
-import FeedContainer from './feed/feedContainer';
-import SubManager from './subs/subManager';
-require('./_css/root');
+import FeedContainer from './feed/subListContainer';
+import Subs from './subs/subs';
 
 const Root = () => (
   <Provider store={store}>
     <Row className="display">
-      <Column small={10} large={3}><SubManager /></Column>
+      <Column small={10} large={3}><Subs /></Column>
       <Column small={10} large={9}><FeedContainer /></Column>
     </Row>
   </Provider>

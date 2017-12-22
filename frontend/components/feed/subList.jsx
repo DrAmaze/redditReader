@@ -3,7 +3,6 @@ import Waypoint from 'react-waypoint';
 
 import Header from './subListItemHeader';
 import Spinner from './spinner';
-require('../_css/feed');
 
 const Feed = ({listings, loading, requestMoreListings}) => {
 
