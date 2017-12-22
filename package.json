@@ -2,12 +2,13 @@
   "name": "redditReader",
   "version": "1.0.0",
   "description": "single page reddit filtering application",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "setup": "npm install; npm run serve",
     "postinstall": "./node_modules/.bin/webpack",
     "serve": "./node_modules/.bin/http-server -p 5050"
   },
+  "keywords": [],
   "author": "JtB",
   "license": "ISC",
   "dependencies": {
