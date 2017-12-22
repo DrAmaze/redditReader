@@ -1,7 +1,7 @@
 import React from 'react';
 import Waypoint from 'react-waypoint';
 
-import Listing from './listing';
+import Header from './subListItemHeader';
 import Spinner from './spinner';
 require('../_css/feed');
 
@@ -12,7 +12,7 @@ const Feed = ({listings, loading, requestMoreListings}) => {
   return(
     <div id="feed" className={ loading ? "feed-loading" : "" }>
       { listings.map( listing => (
-        <Listing listing={listing} key={listing.name} />
+        <Header listing={listing} key={listing.name} />
       ))}
       <Waypoint onEnter={requestMoreListings}/>
       { load() }
