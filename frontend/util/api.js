@@ -21,7 +21,7 @@ export const fetchSubreddits = input => {
     limit: MAX_SUBREDDITS
   };
 
-  return $.ajax({
+  return ajax({
     url: ENDPOINT + reqPath,
     method: "GET",
     data
@@ -56,7 +56,7 @@ export const fetchFeed = (subName, filter, after) => {
     after
   };
 
-  return $.ajax({
+  return ajax({
     url: ENDPOINT + reqPath,
     method: "GET",
     data

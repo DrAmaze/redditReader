@@ -7,6 +7,7 @@ import { initialize } from '../actions/feedActions';
 // Components
 import FeedContainer from './feed/subListContainer';
 import Subs from './subs/subs';
+require('../_css/root');
 
 const Root = () => (
   <Provider store={store}>

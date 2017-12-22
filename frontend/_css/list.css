@@ -1,0 +1,12 @@
+#sub-list {
+  max-height: 250px;
+  overflow: auto;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  margin-bottom: 25px;
+}
+
+#sub-list .fa-times-circle {
+  float: right;
+}

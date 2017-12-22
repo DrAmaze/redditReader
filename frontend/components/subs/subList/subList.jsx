@@ -1,4 +1,8 @@
 import React from 'react';
+require('../../../_css/list');
+require('../../../_css/three_d');
+require('../../../_css/exit');
+require('../../../_css/line');
 
 export default ({ subList, toggleSub, deleteSub }) => {
 

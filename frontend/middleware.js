@@ -4,7 +4,7 @@ import { receiveListings, receiveAdditionalListings, loading,
          REQUEST_MORE_LISTINGS } from './actions/feedActions';
 import { fetchFeed } from './util/api';
 import { merge } from 'lodash';
-import Promise from 'react-promise';
+
 
 const ACTIONS = [ADD_SUBREDDIT, TOGGLE_SUBREDDIT, DELETE_SUBREDDIT, REQUEST_MORE_LISTINGS,
                          SET_FILTER];

@@ -1,0 +1,9 @@
+.fa-times-circle {
+  color: red;
+  opacity: .5;
+  cursor: pointer;
+}
+
+.fa-times-circle:hover {
+  opacity: 1;
+}

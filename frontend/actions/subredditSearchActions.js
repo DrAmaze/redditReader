@@ -20,6 +20,6 @@ export const requestSubs = matcher => dispatch => {
     dispatch(clearSearch());
     return;
   }
-  return ApiUtil.fetchSubs(matcher)
+  return ApiUtil.fetchSubreddits(matcher)
   .then(subs => dispatch(receiveSubs(subs)));
 };
