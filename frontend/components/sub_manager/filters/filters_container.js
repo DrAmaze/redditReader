@@ -1,17 +1,16 @@
 import { connect } from 'react-redux';
-import SubList from './subList';
-import { toggleSub, deleteSub } from '../../../actions/subredditActions';
+import Filters from './filters';
+import { setFilter } from '../../../actions/filter_actions.js';
 
 const mapStateToProps = state => ({
-  subList: state.subList
+  selected: state.filter
 });
 
 const mapDispatchToProps = {
-  toggleSub,
-  deleteSub
+  setFilter
 };
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(SubList);
+)(Filters);

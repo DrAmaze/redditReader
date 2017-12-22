@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
-import SubList from './subList';
+import Feed from './feed';
 import { listingsInView } from '../selectors';
-import { requestMoreListings } from '../../actions/feedActions';
+import { requestMoreListings } from '../../actions/feed_actions';
 
 const mapStateToProps = state => ({
   listings: listingsInView(state),
@@ -15,4 +15,4 @@ const mapDispatchToProps = {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(SubList);
+)(Feed);

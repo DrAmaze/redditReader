@@ -1,10 +1,10 @@
-// Constants
+// CONSTANTS
 export const RECEIVE_LISTINGS = "RECEIVE_LISTINGS";
 export const RECEIVE_ADDITIONAL_LISTINGS = "RECEIVE_ADDITIONAL_LISTINGS";
 export const REQUEST_MORE_LISTINGS = "REQUEST_MORE_LISTINGS";
 export const LOADING = "LOADING";
 
-// Synchronous actions
+// SYNC ACTIONS
 export const receiveListings = payload => ({
   type: RECEIVE_LISTINGS,
   payload

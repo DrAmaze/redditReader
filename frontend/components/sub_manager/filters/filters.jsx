@@ -1,19 +1,19 @@
 import React from 'react';
-require('../../../_css/filters');
-require('../../../_css/three_d');
-require('../../../_css/line');
+require('../../_css/filters');
+require('../../_css/shared/three_d');
+require('../../_css/shared/hr');
 
-const FILTERS = ["HOT", "NEW", "RISING"];
+const FILTER_NAMES = ["HOT", "NEW", "RISING"];
 
-const Filters = ({ selected, setFilter }) => {
+const Filters = ({selected, setFilter}) => {
 
   const _handleChange = e => {
     setFilter(e.currentTarget.id);
   };
 
-  // Creates all the buttons
+  // Creates all the radio buttons
   const _generateFilters = () => {
-    return FILTERS.map( name => (
+    return FILTER_NAMES.map( name => (
       <div key={name}>
         <input type="radio"
                name="filters"
@@ -21,18 +21,18 @@ const Filters = ({ selected, setFilter }) => {
                checked={name === selected}
                onChange={_handleChange}/>
 
-        <label htmlFor={name} > { name } </label>
+        <label htmlFor={name} >{name}</label>
       </div>
-    ));
+    ))
   };
 
   return(
     <div id="filters" className="three-d">
       <h5>Filters</h5>
       <div className="hr"></div>
-      { _generateFilters() }
+      {_generateFilters()}
     </div>
   );
-};
+}
 
 export default Filters;

@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
-import Search from './search';
-import { requestSubs, clearSearch } from '../../../actions/subredditSearchActions';
-import { addSub } from '../../../actions/subredditActions';
+import SubSearch from './sub_search';
+import { requestSubs, clearSearch } from '../../../actions/sub_search_actions';
+import { addSub } from '../../../actions/sub_list_actions';
 
 const mapStateToProps = state => ({
   subSearchResults: state.subSearchResults
@@ -16,4 +16,4 @@ const mapDispatchToProps = {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Search);
+)(SubSearch);

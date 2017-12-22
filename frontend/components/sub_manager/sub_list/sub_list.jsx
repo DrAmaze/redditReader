@@ -1,14 +1,15 @@
 import React from 'react';
-require('../../../_css/list');
-require('../../../_css/three_d');
-require('../../../_css/exit');
-require('../../../_css/line');
+import FontAwesome from 'react-fontawesome';
+require('../../_css/sub_list');
+require('../../_css/shared/three_d');
+require('../../_css/shared/exit');
+require('../../_css/shared/hr');
 
-export default ({ subList, toggleSub, deleteSub }) => {
+export default ({subList, toggleSub, deleteSub}) => {
 
   const _handleChange = e => {
     toggleSub(e.currentTarget.id);
-  };
+  }
 
   const _handleDelete = subName => () => deleteSub(subName);
 
@@ -22,18 +23,16 @@ export default ({ subList, toggleSub, deleteSub }) => {
                onChange={_handleChange} />
 
         <label htmlFor={sub.name}>{sub.name}</label>
-        <div onClick={_handleDelete(sub.name)}>
-          times-circle
-        </div>
+        <FontAwesome name='times-circle' onClick={_handleDelete(sub.name)}/>
       </div>
     ))
   );
 
   return(
     <div id="sub-list" className="three-d">
-      <h5>Your Subreddits</h5>
+      <h5>Your Subs</h5>
       <div className="hr"></div>
-      { _renderSubs() }
+      {_renderSubs()}
     </div>
-  );
+  )
 };

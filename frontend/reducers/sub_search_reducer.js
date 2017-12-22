@@ -1,7 +1,4 @@
-import {
-  RECEIVE_SUBS,
-  CLEAR_SEARCH
-} from '../actions/subredditSearchActions';
+import { RECEIVE_SUBS, CLEAR_SEARCH } from '../actions/sub_search_actions';
 
 export default function(oldState = [], action) {
   switch(action.type){

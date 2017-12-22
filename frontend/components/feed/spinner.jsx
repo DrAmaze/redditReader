@@ -1,14 +1,15 @@
 import React from 'react';
-require('../../_css/spinner');
+require('../_css/spinner');
 
 export default () => {
 
-  const stylePos = {
+  const style = {
     top: window.scrollY + (window.innerHeight / 2) - 40
   };
 
+
   return(
-    <div className="spinner" style={stylePos}>
+    <div className="spinner" style={style}>
       <div className="rect1"></div>
       <div className="rect2"></div>
       <div className="rect3"></div>

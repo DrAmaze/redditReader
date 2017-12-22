@@ -1,8 +1,9 @@
 import React from 'react';
 import { bindAll } from 'lodash';
-require('../../../_css/search');
-require('../../../_css/three_d');
-require('../../../_css/exit');
+import FontAwesome from 'react-fontawesome';
+require('../../_css/sub_search');
+require('../../_css/shared/three_d');
+require('../../_css/shared/exit');
 
 class SubSearch extends React.Component {
   constructor(props){
@@ -38,9 +39,7 @@ class SubSearch extends React.Component {
     if(this.props.subSearchResults.length === 0){ return; }
     return (
       <div id="search-results" className="three-d">
-        <div onClick={this._handleClear}>
-          Times Circle
-        </div>
+        <FontAwesome name='times-circle' onClick={this._handleClear}/>
         <ul onClick={this._addSub}>
           {this._renderSubList()}
         </ul>
@@ -55,7 +54,7 @@ class SubSearch extends React.Component {
           <input onChange={this._handleChange}
             value={this.state.query}
             placeholder="Find A Subreddit!"/>
-          Search
+          <FontAwesome name='search' />
         </div>
         {this._renderResults()}
       </div>
