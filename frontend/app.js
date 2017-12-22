@@ -15,8 +15,8 @@ const client = new Snoostorm(redditAuth);
 
 // Configure options for stream: subreddit & results per query
 const streamOptions = {
-    subreddit: 'testingground4bots',
-    results: 25
+  subreddit: 'testingground4bots',
+  results: 25
 };
 
 // Create a Snoostorm CommentStream with the specified options
@@ -24,9 +24,9 @@ const comments = client.CommentStream(streamOptions);
 
 // On comment, perform whatever logic you want to do
 comments.on('comment', (comment) => {
-    console.log(comment);
-    if (comment.body === ':(') {
-      comment.reply(':)');
-    }
-    console.log(comment.body);
+  console.log(comment);
+  if (comment.body === ':(') {
+    comment.reply(':)');
+  }
+  console.log(comment.body);
 });
