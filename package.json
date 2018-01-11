@@ -4,7 +4,9 @@
   "description": "single page reddit filtering application",
   "main": "index.js",
   "scripts": {
-    "postinstall": "webpack"
+    "setup": "npm install; npm run serve",
+    "postinstall": "webpack",
+    "serve": "./node_modules/.bin/http-server -p 5050"
   },
   "keywords": [],
   "author": "JtB",
