@@ -25,7 +25,7 @@
 }
 
 .listing:hover {
-  box-shadow: 4px 6px 4px #888;
+  /* box-shadow: 4px 6px 4px #888; */
 }
 
 .listing:hover:after {
